@@ -25,7 +25,12 @@ def create_layout(app):
                     html.Div(
                         [
                             html.Div(
-                                [html.H6(["Portfolio"], className="subtitle padded")],
+                                [
+                                    html.H6(
+                                        ["Portfolio"],
+                                        className="subtitle padded",
+                                    )
+                                ],
                                 className="twelve columns",
                             )
                         ],
@@ -36,7 +41,10 @@ def create_layout(app):
                         [
                             html.Div(
                                 [
-                                    html.P(["Stock style"], style={"color": "#7a7a7a"}),
+                                    html.P(
+                                        ["Stock style"],
+                                        style={"color": "#7a7a7a"},
+                                    ),
                                     dcc.Graph(
                                         id="graph-5",
                                         figure={
@@ -277,7 +285,9 @@ def create_layout(app):
                             html.Div(
                                 [
                                     html.H6(
-                                        ["Equity characteristics as of 01/31/2018"],
+                                        [
+                                            "Equity characteristics as of 01/31/2018"
+                                        ],
                                         className="subtitle padded",
                                     ),
                                     html.Table(

@@ -25,7 +25,11 @@ def get_header(app):
             html.Div(
                 [
                     html.Div(
-                        [html.H5("Calibre Financial Index Fund Investor Shares")],
+                        [
+                            html.H5(
+                                "Calibre Financial Index Fund Investor Shares"
+                            )
+                        ],
                         className="seven columns main-title",
                     ),
                     html.Div(
@@ -67,7 +71,9 @@ def get_menu():
                 className="tab",
             ),
             dcc.Link(
-                "Fees & Minimums", href="/dash-financial-report/fees", className="tab"
+                "Fees & Minimums",
+                href="/dash-financial-report/fees",
+                className="tab",
             ),
             dcc.Link(
                 "Distributions",

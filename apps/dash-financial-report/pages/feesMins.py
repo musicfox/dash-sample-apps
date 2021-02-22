@@ -25,7 +25,12 @@ def create_layout(app):
                     html.Div(
                         [
                             html.Div(
-                                [html.H6(["Expenses"], className="subtitle padded")],
+                                [
+                                    html.H6(
+                                        ["Expenses"],
+                                        className="subtitle padded",
+                                    )
+                                ],
                                 className="twelve columns",
                             )
                         ],
@@ -38,7 +43,10 @@ def create_layout(app):
                                 [
                                     html.Strong(),
                                     html.Table(make_dash_table(df_expenses)),
-                                    html.H6(["Minimums"], className="subtitle padded"),
+                                    html.H6(
+                                        ["Minimums"],
+                                        className="subtitle padded",
+                                    ),
                                     html.Table(make_dash_table(df_minimums)),
                                 ],
                                 className="six columns",
@@ -55,15 +63,22 @@ def create_layout(app):
                                         figure={
                                             "data": [
                                                 go.Bar(
-                                                    x=["Category Average", "This fund"],
+                                                    x=[
+                                                        "Category Average",
+                                                        "This fund",
+                                                    ],
                                                     y=["2242", "329"],
-                                                    marker={"color": "#97151c"},
+                                                    marker={
+                                                        "color": "#97151c"
+                                                    },
                                                     name="A",
                                                 ),
                                                 go.Bar(
                                                     x=["This fund"],
                                                     y=["1913"],
-                                                    marker={"color": " #dddddd"},
+                                                    marker={
+                                                        "color": " #dddddd"
+                                                    },
                                                     name="B",
                                                 ),
                                             ],
@@ -175,7 +190,9 @@ def create_layout(app):
                                                     html.Div(
                                                         [
                                                             html.Strong(
-                                                                ["Purchase fee"],
+                                                                [
+                                                                    "Purchase fee"
+                                                                ],
                                                                 style={
                                                                     "color": "#515151"
                                                                 },
@@ -206,7 +223,9 @@ def create_layout(app):
                                                     html.Div(
                                                         [
                                                             html.Strong(
-                                                                ["Redemption fee"],
+                                                                [
+                                                                    "Redemption fee"
+                                                                ],
                                                                 style={
                                                                     "color": "#515151"
                                                                 },
@@ -227,7 +246,9 @@ def create_layout(app):
                                                     ),
                                                 ],
                                                 className="row",
-                                                style={"background-color": "#f9f9f9"},
+                                                style={
+                                                    "background-color": "#f9f9f9"
+                                                },
                                             ),
                                             html.Div(
                                                 [
@@ -255,7 +276,9 @@ def create_layout(app):
                                                     ),
                                                 ],
                                                 className="row",
-                                                style={"background-color": "#f9f9f9"},
+                                                style={
+                                                    "background-color": "#f9f9f9"
+                                                },
                                             ),
                                         ],
                                         className="fees",
@@ -265,8 +288,12 @@ def create_layout(app):
                                             html.Div(
                                                 [
                                                     html.Strong(
-                                                        ["Account service fee"],
-                                                        style={"color": "#515151"},
+                                                        [
+                                                            "Account service fee"
+                                                        ],
+                                                        style={
+                                                            "color": "#515151"
+                                                        },
                                                     )
                                                 ],
                                                 className="three columns right-aligned",
@@ -277,46 +304,64 @@ def create_layout(app):
                                                         [
                                                             "Nonretirement accounts, traditional IRAs, Roth IRAs, UGMAs/UTMAs, SEP-IRAs, and education savings accounts (ESAs)"
                                                         ],
-                                                        style={"color": "#515151"},
+                                                        style={
+                                                            "color": "#515151"
+                                                        },
                                                     ),
                                                     html.P(
                                                         [
                                                             "We charge a $20 annual account service fee for each Brokerage Account, as well as each individual mutual fund holding with a balance of less than $10,000 in an account. This fee does not apply if you sign up for account and choose electronic delivery of statements, confirmations, and fund reports and prospectuses. This fee also does not apply to members of Flagship Select™, Flagship®, Voyager Select®, and Voyager® Services."
                                                         ],
-                                                        style={"color": "#7a7a7a"},
+                                                        style={
+                                                            "color": "#7a7a7a"
+                                                        },
                                                     ),
                                                     html.Br([]),
                                                     html.Strong(
                                                         ["SIMPLE IRAs"],
-                                                        style={"color": "#515151"},
+                                                        style={
+                                                            "color": "#515151"
+                                                        },
                                                     ),
                                                     html.P(
                                                         [
                                                             "We charge participants a $25 annual account service fee for each fund they hold in their SIMPLE IRA. This fee does not apply to members of Flagship Select, Flagship, Voyager Select, and Voyager Services."
                                                         ],
-                                                        style={"color": "#7a7a7a"},
+                                                        style={
+                                                            "color": "#7a7a7a"
+                                                        },
                                                     ),
                                                     html.Br([]),
                                                     html.Strong(
                                                         ["403(b)(7) plans"],
-                                                        style={"color": "#515151"},
+                                                        style={
+                                                            "color": "#515151"
+                                                        },
                                                     ),
                                                     html.P(
                                                         [
                                                             "We charge participants a $15 annual account service fee for each fund they hold in their 403(b)(7) account. This fee does not apply to members of Flagship Select, Flagship, Voyager Select, and Voyager Services."
                                                         ],
-                                                        style={"color": "#7a7a7a"},
+                                                        style={
+                                                            "color": "#7a7a7a"
+                                                        },
                                                     ),
                                                     html.Br([]),
                                                     html.Strong(
-                                                        ["Individual 401(k) plans"],
-                                                        style={"color": "#515151"},
+                                                        [
+                                                            "Individual 401(k) plans"
+                                                        ],
+                                                        style={
+                                                            "color": "#515151"
+                                                        },
                                                     ),
                                                     html.P(
                                                         [
                                                             "We charge participants a $20 annual account service fee for each fund they hold in their Individual 401(k) account. This fee will be waived for all participants in the plan if at least 1 participant qualifies for Flagship Select, Flagship, Voyager Select, and Voyager Services"
                                                         ],
-                                                        style={"color": "#7a7a7a"},
+                                                        style={
+                                                            "color": "#7a7a7a"
+                                                        },
                                                     ),
                                                     html.Br([]),
                                                 ],

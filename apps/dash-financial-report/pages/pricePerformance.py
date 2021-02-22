@@ -31,9 +31,12 @@ def create_layout(app):
                             html.Div(
                                 [
                                     html.H6(
-                                        ["Current Prices"], className="subtitle padded"
+                                        ["Current Prices"],
+                                        className="subtitle padded",
                                     ),
-                                    html.Table(make_dash_table(df_current_prices)),
+                                    html.Table(
+                                        make_dash_table(df_current_prices)
+                                    ),
                                 ],
                                 className="six columns",
                             ),
@@ -43,7 +46,9 @@ def create_layout(app):
                                         ["Historical Prices"],
                                         className="subtitle padded",
                                     ),
-                                    html.Table(make_dash_table(df_hist_prices)),
+                                    html.Table(
+                                        make_dash_table(df_hist_prices)
+                                    ),
                                 ],
                                 className="six columns",
                             ),
@@ -55,14 +60,19 @@ def create_layout(app):
                         [
                             html.Div(
                                 [
-                                    html.H6("Performance", className="subtitle padded"),
+                                    html.H6(
+                                        "Performance",
+                                        className="subtitle padded",
+                                    ),
                                     dcc.Graph(
                                         id="graph-4",
                                         figure={
                                             "data": [
                                                 go.Scatter(
                                                     x=df_graph["Date"],
-                                                    y=df_graph["Calibre Index Fund"],
+                                                    y=df_graph[
+                                                        "Calibre Index Fund"
+                                                    ],
                                                     line={"color": "#97151c"},
                                                     mode="lines",
                                                     name="Calibre Index Fund",
@@ -81,7 +91,10 @@ def create_layout(app):
                                                 autosize=True,
                                                 width=700,
                                                 height=200,
-                                                font={"family": "Raleway", "size": 10},
+                                                font={
+                                                    "family": "Raleway",
+                                                    "size": 10,
+                                                },
                                                 margin={
                                                     "r": 30,
                                                     "t": 30,
@@ -168,7 +181,9 @@ def create_layout(app):
                                     html.Div(
                                         [
                                             html.Table(
-                                                make_dash_table(df_avg_returns),
+                                                make_dash_table(
+                                                    df_avg_returns
+                                                ),
                                                 className="tiny-header",
                                             )
                                         ],

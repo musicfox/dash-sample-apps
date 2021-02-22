@@ -57,7 +57,8 @@ def create_layout(app):
                             html.Div(
                                 [
                                     html.H6(
-                                        ["Fund Facts"], className="subtitle padded"
+                                        ["Fund Facts"],
+                                        className="subtitle padded",
                                     ),
                                     html.Table(make_dash_table(df_fund_facts)),
                                 ],
@@ -124,7 +125,10 @@ def create_layout(app):
                                             "layout": go.Layout(
                                                 autosize=False,
                                                 bargap=0.35,
-                                                font={"family": "Raleway", "size": 10},
+                                                font={
+                                                    "family": "Raleway",
+                                                    "size": 10,
+                                                },
                                                 height=200,
                                                 hovermode="closest",
                                                 legend={
@@ -151,7 +155,10 @@ def create_layout(app):
                                                 },
                                                 yaxis={
                                                     "autorange": True,
-                                                    "range": [0, 22.9789473684],
+                                                    "range": [
+                                                        0,
+                                                        22.9789473684,
+                                                    ],
                                                     "showgrid": True,
                                                     "showline": True,
                                                     "title": "",
@@ -217,7 +224,10 @@ def create_layout(app):
                                             "layout": go.Layout(
                                                 autosize=True,
                                                 title="",
-                                                font={"family": "Raleway", "size": 10},
+                                                font={
+                                                    "family": "Raleway",
+                                                    "size": 10,
+                                                },
                                                 height=200,
                                                 width=340,
                                                 hovermode="closest",
@@ -278,10 +288,13 @@ def create_layout(app):
                             html.Div(
                                 [
                                     html.H6(
-                                        "Risk Potential", className="subtitle padded"
+                                        "Risk Potential",
+                                        className="subtitle padded",
                                     ),
                                     html.Img(
-                                        src=app.get_asset_url("risk_reward.png"),
+                                        src=app.get_asset_url(
+                                            "risk_reward.png"
+                                        ),
                                         className="risk-reward",
                                     ),
                                 ],

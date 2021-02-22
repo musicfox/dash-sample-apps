@@ -25,7 +25,8 @@ def create_layout(app):
                             html.Div(
                                 [
                                     html.H6(
-                                        ["Distributions"], className="subtitle padded"
+                                        ["Distributions"],
+                                        className="subtitle padded",
                                     ),
                                     html.P(
                                         [
@@ -46,7 +47,9 @@ def create_layout(app):
                                 [
                                     html.Br([]),
                                     html.H6(
-                                        ["Dividend and capital gains distributions"],
+                                        [
+                                            "Dividend and capital gains distributions"
+                                        ],
                                         className="subtitle tiny-header padded",
                                     ),
                                     html.Div(
@@ -70,7 +73,9 @@ def create_layout(app):
                             html.Div(
                                 [
                                     html.H6(
-                                        ["Realized/unrealized gains as of 01/31/2018"],
+                                        [
+                                            "Realized/unrealized gains as of 01/31/2018"
+                                        ],
                                         className="subtitle tiny-header padded",
                                     )
                                 ],
